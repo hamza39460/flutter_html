@@ -230,6 +230,8 @@ class Style {
   TextOverflow? textOverflow;
 
   TextTransform? textTransform;
+  
+  PlaceholderAlignment? placeholderAlignment;
 
   Style({
     this.backgroundColor = Colors.transparent,
@@ -271,6 +273,7 @@ class Style {
     this.maxLines,
     this.textOverflow,
     this.textTransform = TextTransform.none,
+    this.placeholderAlignment = PlaceholderAlignment.bottom,
   }) {
     if (alignment == null &&
         (display == Display.block || display == Display.listItem)) {
